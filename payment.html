@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="https://s8.gifyu.com/images/pngwing.com9e92bea20b8acd01.png">    
+    <link rel="stylesheet" href="style2.css">
+    <title>Fl Studio 20 Comprar</title>
+  </head>
+
+<body>
+    <div class="container">
+      <div class="cnt">
+        <div class="info">
+          <h3>Escaneie o codigo QR ou copie a chave aleatória e em seguida envie uma mensagem para o e-mail da descrição e logo você receberá seu link para o Download do programa!</h3>
+        </div>
+        <div class="qrcode">
+          <img id="qr" alt="QRCodePayment" src="qrcode.png"/>
+          <figcaption> Vinícius Oliveira</figcaption>
+          <figcaption id="emailV">vinnissuz@hotmail.com</figcaption>
+        </div>
+        <div class="copiar">
+          <input type="text" name="codigo" id="code" value="7ac13a4c-8dd9-423f-a78e-9a534f95ff34" readonly />
+          <button onclick="copiar()">Copiar</button>
+
+          <script>
+            function copiar() {
+                let copia = document.getElementById("code");
+                copia.select();
+                copia.setSelectionRange(0, 99999);
+
+                document.execCommand("copy");
+                alert('foi copiado: '+ copia.value);
+            }
+          </script>
+        </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
