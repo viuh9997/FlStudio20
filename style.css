@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+
+input {
+	display: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #1d1d1f;
+	overflow: hidden;
+}
+
+.content {
+	background: #ccc;
+	align-self: center;
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #1d1d1f;
+	position: relative;
+	z-index: 1;
+}
+
+.info {
+	font-weight: bold;
+	font-size: large;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.info h2,
+h4,
+#compra {
+	margin: 10px;
+}
+
+#compra {
+	background: rgb(88, 87, 87);
+	color: white;
+	font-size: large;
+	border: none;
+	padding: 2vh 8vh;
+	cursor: pointer;
+	text-align: center;
+}
+
+#compra:hover {
+	transform: scale(1.2);
+}
+
+#compra:active {
+	transform: scale(1.1);
+}
+
+.banner {
+	width: 40vh;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	padding: 0 10px;
+}
+
+.social img {
+	filter: invert(100%);
+}
+
+.social img:hover {
+	transform: scale(1.3);
+}
+
+#comprar:checked ~ .payment {
+	display: block;
+}
+
+#Sobre:checked ~ .content {
+	display: none;
+}
+
+#Sobre:checked ~ .Description {
+	display: block;
+}
+
+.Description {
+	padding: 0 5vh;
+	background: #ccc;
+	height: 80vh;
+	width: auto;
+	color: #1d1d1f;
+	position: relative;
+	overflow-y: scroll;
+	z-index: 2;
+	display: none;
+	font-weight: bold;
+	font-size: large;
+}
+
+.payment {
+	padding: 0 5vh;
+	background: #ccc;
+	height: 80vh;
+	width: auto;
+	color: #1d1d1f;
+	position: relative;
+	display: none;
+	font-weight: bold;
+	font-size: large;
+	overflow-y: scroll;
+}
+
+#qr {
+	width: 30vh;
+}
