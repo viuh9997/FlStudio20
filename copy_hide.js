@@ -7,18 +7,20 @@ function copiar() {
 	alert("foi copiado: " + copia.value);
 }
 
-document.getElementById('comprar').addEventListener('click', (event) =>{
-  if(event.target.checked){
-	  document.getElementById('n').style.display = 'none';
-	  document.getElementById('n2').style.display = 'none';
-	  document.getElementById('compra').style.display = 'none';
-  }
-})
+document.getElementById("comprar").addEventListener("click", (event) => {
+	if (event.target.checked) {
+		document.getElementById("logo").style.display = "none";
+		document.getElementById("n").style.display = "none";
+		document.getElementById("n2").style.display = "none";
+		document.getElementById("compra").style.display = "none";
+	}
+});
 
-document.getElementById('x').addEventListener('click', (event) =>{
-  if(event.target.checked){
-	  document.getElementById('n').style.display = 'block';
-	  document.getElementById('n2').style.display = 'block';
-	  document.getElementById('compra').style.display = 'block';
-  }
-})
+document.getElementById("x").addEventListener("click", (event) => {
+	if (event.target.checked) {
+		document.getElementById("logo").style.display = "block";
+		document.getElementById("n").style.display = "block";
+		document.getElementById("n2").style.display = "block";
+		document.getElementById("compra").style.display = "block";
+	}
+});
